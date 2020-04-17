@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__menu-item">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="header__menu-item">
+                            <a href="#">Academics</a>
+                        </div>
+                        <div class="header__menu-item">
+                            <a href="#">Campus Life</a>
+                        </div>
+                        <div class="header__menu-item">
+                            <a href="#">Research</a>
+                        </div>
+                        <div class="header__menu-item">
+                            <a href="#">Admissions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper-main">
+            <div class="container">
+                <div class="section-main">
+                    <div class="main-left">
+                        <h2 class="main-title">admissions</h2>
+                        <div class="main-left__item">
+                            <a href="#">Apply for Admission</a>
+                        </div>
+                        <div class="main-left__item">
+                            <a href="#">Admission Requrements</a>
+                        </div>
+                        <div class="main-left__item">
+                            <a href="#">Finarcial Add</a>
+                        </div>
+                        <div class="main-left__item">
+                            <a href="#">Urder greduate</a>
+                        </div>
+                        <div class="main-left__item">
+                            <a href="#">Professional</a>
+                        </div>
+                    </div>
+                    <div class="main-center">
+                        <h1>Admissions</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quaerat adipisci repellendus corrupti fuga perspiciatis exercitationem est maiores inventore sunt tempora soluta repellat fugit numquam, consequuntur id, quam nobis voluptate earum labore cum atque. Possimus suscipit placeat odit, assumenda alias vel aperiam. Magnam inventore neque placeat nobis, pariatur quisquam molestias!</p>
+                        <p>Neque distinctio saepe maiores, modi culpa ullam vitae dignissimos quam quas, nihil magni alias eius? Fugiat, quidem quia animi repellat perspiciatis iusto libero pariatur expedita recusandae nobis ad sapiente optio et tenetur, aliquam maxime. Illum sit quis corrupti, labore distinctio suscipit dolorum, voluptatem totam beatae sapiente voluptatibus accusamus vero expedita.</p>
+                        <p>Repellat molestiae distinctio debitis illo perspiciatis similique nulla! Harum pariatur excepturi ratione explicabo? Minus aperiam rerum culpa asperiores illum, corrupti nostrum reprehenderit officia perspiciatis eveniet ratione dolores qui ea eum necessitatibus delectus ex dolor deleniti nisi sunt accusamus cupiditate. Eaque sapiente ipsa eos nemo autem ab vero, et aliquam ea.</p>
+                        <p>Atque facere et rem tenetur maiores voluptatibus quasi iusto quidem quia tempore nostrum earum magnam velit est laboriosam nihil numquam animi, doloribus rerum molestiae perferendis fuga impedit beatae? Quas placeat sequi quos, eum excepturi consequatur perspiciatis unde facilis quidem exercitationem amet voluptatibus expedita deleniti, molestias sapiente, totam fugiat! Unde, cum.</p>
+                    </div>
+                    <div class="main-right">
+                        <form action="vendor/signup.php" method="post" enctype="multipart/form-data">
+                            <label>Full name</label>
+                            <input type="text" name="full_name">
+                            <label>Login</label>
+                            <input type="text" name="login">
+                            <label>Email</label>
+                            <input type="email" name="email">
+                            <label>Password</label>
+                            <input type="password" name="password">
+                            <label>Repeat password</label>
+                            <input type="password" name="password_confirm">
+                            <button type="submit">Get started</button>
+                            <p>
+                                Do you already have an account? <a href="/index.php">Log in</a>
+                            </p>
+                            <p class="msg">Message</p>  
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+
+    </div>
+    <!-- /ОБОЛОЧКА -->
+
+    <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup js-popup" data-id-popup="popup-1">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап 2</h2>
+            </div>
+        </div>
+    </div>
+    <!-- /попап -->
+
+    <!-- кнопка прокрутки вверх -->
+    <div class="srolles-top js-up">
+        <button class="srolles-top__btn js-srolles-top"></button>
+    </div>
+    <!-- /кнопка прокрутки вверх -->
+
+
+    <!-- Подключеине скриптов -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+// <ПОДКЛЮЧЕНИЕ MIXIN>------------------------------------------------------
+@import "mixin.scss";
+// <ПОДКЛЮЧЕНИЕ MIXIN>------------------------------------------------------
+
+// <ШРИФТЫ>-----------------------------------------------------------------
+
+// <подключаем шрифты>------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+// </подключаем шрифты>-----------------------------------------------------
+
+// <шрифт по умолчанию>-----------------------------------------------------
+$font-family: "IBM Plex Sans", sans-serif;
+$font-style: normal;
+$font-weight: 500;
+$font-size: 16px;
+$line-height: 23px;
+// </шрифт по умолчанию>----------------------------------------------------
+
+// </ШРИФТЫ>----------------------------------------------------------------
+
+
+// <ПЕРЕМЕННЫЕ>-------------------------------------------------------------
+$max-width: 1200;
+$min-width: 320;
+$body-font-size: 14;
+$padd-container: 20;
+// </ПЕРЕМЕННЫЕ>------------------------------------------------------------
+
+
+// <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>---------------------------------------------
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+aside,
+nav,
+section,
+header,
+footer {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    min-width: $min-width+px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1;
+    font-size: $body-font-size+px;
+    position: relative;
+    width: 100%;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: $font-family;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+// </ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>---------------------------------------------
+
+
+// <ОБОЛОЧКА>----------------------------------------------------------------
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+// </ОБОЛОЧКА>---------------------------------------------------------------
+
+
+// <КОНТЕЙНЕР>---------------------------------------------------------------
+.container {
+    max-width: $max-width+px;
+    margin: 0 auto;
+    padding: 0 $padd-container+px;
+}
+
+// </КОНТЕЙНЕР>--------------------------------------------------------------
+
+
+// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>---------------------------
+@import "class.scss";
+// </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>--------------------------
+
+
+// <ШАПКА>-------------------------------------------------------------------
+.header{
+    padding: 20px 0;
+    border-bottom: 10px solid #19549b;
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    max-width: 200px;
+}
+.header__logo img{
+    width: 100%;
+}
+.header__menu{
+    display: flex;
+}
+.header a{
+    color: #000;
+    transition: 0.4s;
+}
+.header__menu-item:not(:last-child){
+    margin-right: 20px;
+}
+.header a:hover{
+    color: red;
+}
+
+// </ШАПКА>------------------------------------------------------------------
+
+
+// <ОСНОВНОЙ БЛОК>-----------------------------------------------------------
+
+.section-main{
+    display: flex;
+    padding: 40px 0;
+}
+.main-left{
+    padding: 40px;
+    background-color: #f7f2ef;
+    height: fit-content;
+    width: 20%;
+}
+.section-main a{
+    color: #1a5897;
+    transition: 0.4s;
+}
+.section-main a:hover{
+    opacity: 0.7;
+}
+.main-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.main-left__item{
+    padding: 5px 0;
+    border-bottom: 1px solid #ebe7e4;
+}
+h1{
+    font-weight: 900;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+.main-center{
+    padding: 0 40px;
+    width: 50%;
+}
+.main-right{
+    width: 30%;
+}
+.section-main p{
+    padding: 10px 0;
+    font-weight: 400;
+    max-width: 100%;
+}
+// form 
+
+.main-right a{
+	color: #7c9ab7;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.main-right form{
+	display: flex;
+	flex-direction: column;
+}
+
+.main-right input{
+	margin: 10px 0;
+	padding: 10px;
+	border: unset;
+	border-bottom: 2px solid #e3e3e3;
+	outline: none;
+}
+
+.main-right button{
+	padding: 10px;
+	background: #e3e3e3;
+	border: unset;
+	cursor: pointer;
+	outline: none;
+}
+p.msg{
+	border: 2px solid #ffa908;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+.logout{
+	color: #b7625c;
+}
+
+//end form
+// </ОСНОВНОЙ БЛОК>----------------------------------------------------------
+
+
+// <404>-----------------------------------------------------------
+
+//===========================================================================
+
+// </404>----------------------------------------------------------
+
+
+// <ПОДВАЛ>------------------------------------------------------------------
+
+//===========================================================================
+
+// </ПОДВАЛ>-----------------------------------------------------------------
+
+
+// <ПОПАП>-------------------------------------------------------------------
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup__opas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.popup__wrapp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 3px;
+    z-index: 9999;
+    padding: 20px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.popup__close {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    right: -30px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    transition: 0.4s;
+    cursor: pointer;
+    background: #fff url(../img/icons/close.svg) 50% 50%/ 65% no-repeat;
+}
+// </ПОПАП>------------------------------------------------------------------
+
+
+// <ПРОКРУТКА ВВЕРХ>---------------------------------------------------------
+.srolles-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none;
+}
+
+.srolles-top__btn {
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 173, 10, 1);
+    position: relative;
+    transition: 0.4s;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%) rotate(45deg);
+        width: 15px;
+        height: 15px;
+        display: block;
+        background: transparent;
+        border: 2px solid #fff;
+        transition: inherit;
+        border-right-width: 0;
+        border-bottom-width: 0;
+    }
+}
+// </ПРОКРУТКА ВВЕРХ>--------------------------------------------------------
+
+
+// <ПОДКЛЮЧЕНИЕ МЕДИАЗАПРОСОВ>-----------------------------------------------
+@import "media.scss";
+// </ПОДКЛЮЧЕНИЕ МЕДИАЗАПРОСОВ>----------------------------------------------

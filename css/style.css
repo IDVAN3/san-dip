@@ -261,7 +261,7 @@ li.counter li:before {
 }
 
 .main-left {
-  padding: 60px 40px;
+  padding: 60px 40px 100px 40px;
   background-color: #f7f2ef;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -269,24 +269,25 @@ li.counter li:before {
   width: 25%;
 }
 
-.section-main a {
+.main-left a {
+  font-size: 22px;
   color: #1a5897;
   transition: 0.4s;
 }
 
-.section-main a:hover {
+.main-left a:hover {
   opacity: 0.7;
 }
 
 .main-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
   padding-bottom: 12px;
 }
 
 .main-left__item {
-  padding: 5px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ebe7e4;
 }
 

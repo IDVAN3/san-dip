@@ -109,7 +109,7 @@ h6 {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -261,12 +261,12 @@ li.counter li:before {
 }
 
 .main-left {
-  padding: 40px;
+  padding: 60px 40px;
   background-color: #f7f2ef;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 20%;
+  width: 25%;
 }
 
 .section-main a {
@@ -281,7 +281,7 @@ li.counter li:before {
 .main-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   padding-bottom: 12px;
 }
 
@@ -302,7 +302,7 @@ h1 {
 }
 
 .main-right {
-  width: 30%;
+  width: 25%;
 }
 
 .section-main p {
